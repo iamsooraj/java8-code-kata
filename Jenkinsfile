@@ -16,7 +16,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-            
+             sh 'mvn --settings settings.xml package -Dmaven.test.skip=true'
             }
         }
 
