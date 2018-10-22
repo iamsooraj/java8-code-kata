@@ -10,5 +10,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-test-tool</artifactId>
+    
+         <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-group/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 
 </project>
